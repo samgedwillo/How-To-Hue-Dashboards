@@ -14,7 +14,7 @@ This repository will walk through a tutorial on how to access, and use Hue dashb
 
 4. Create an index for a Dashboard
     - Go to the drop-down box under the "Query" button and select "Dashboards"
-    ![alt text](https://github.com/samgedwillo/How-To-Hue-Dashboards/Dashboard.PNG "To Dashboard")
+    ![alt text](https://github.com/samgedwillo/How-To-Hue-Dashboards/blob/master/Dashboard.PNG "To Dashboard")
     - Follow the link to create an index.
     - Pick the data file from the location where you -put in HDFS.
     - Confirm the dataset is split appropriately.
