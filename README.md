@@ -15,6 +15,7 @@ https://www.kaggle.com/census/total-construction-spending-data-collection
   https://community.cloudera.com/t5/Hadoop-101-Training-Quickstart/How-to-setup-Cloudera-Quickstart-Virtual-Machine/ta-p/35056
 
 ### 2. Extract the file from the zipped folder and move it to HDFS.
+- unzip file: 'unzip filename'
 - Use the command: `hadoop fs -put fileLocation /user/hive/warehouse/`
   Alternatively, if you placed your file elsewhere `sudo -u hdfs hadoop fs -put {file location} {hdfs location}`
 - If you have permission issues with the file use the command: `chmod +rwd {file}`
@@ -52,8 +53,10 @@ https://www.kaggle.com/census/total-construction-spending-data-collection
 3. NameNode in Safemode.
    Sometimes namenode does not leave safemode(basically read only) after 
    startup is complete. 
-   Fix: sudo -u hdfs hadoop dfsadmin -safemode leave
+   Fix: 'sudo -u hdfs hadoop dfsadmin -safemode leave'
    This script is deprecated but still runs
+
+
 
 
 ### Sources
