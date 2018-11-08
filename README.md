@@ -49,6 +49,13 @@ https://www.kaggle.com/census/total-construction-spending-data-collection
 2. Always backtrack.
    If you load a dataset in hue and delete that dataset it will attempt to open at that same location and throw errors. Same for indexing. If you load in a dataset and then index, delete the index BEFORE deleting the data.
 
+3. NameNode in Safemode.
+   Sometimes namenode does not leave safemode(basically read only) after 
+   startup is complete. 
+   Fix: sudo -u hdfs hadoop dfsadmin -safemode leave
+   This script is deprecated but still runs
+
+
 ### Sources
 https://www.kaggle.com/census/total-construction-spending-data-collection
 https://www.tutorialspoint.com/apache_solr/apache_solr_indexing_data.htm
