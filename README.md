@@ -21,13 +21,10 @@ https://www.kaggle.com/census/total-construction-spending-data-collection
 - If you have permission issues with the file use the command: `chmod +rwd {file}`
 
 ### 3. Move the dataset into Hue.
-- Go to the drop-down box under the "Query" button and select "Dashboards"
-
-    ![alt text](https://github.com/samgedwillo/How-To-Hue-Dashboards/blob/master/Dashboard.PNG "To Dashboard")
-- Follow the link to create an index.
-- Pick the data file from the location where you -put in HDFS.
-- Confirm the dataset is split appropriately.
-- Move it to a table. (follow the "Next" button's instructions.)
+- Go to table
+- Click the +
+- Use the file browser to select your dataset
+- Follow the dialogue 
 
 ### 4. Index the Data with Solr
 - Go to quickstart.cloudera:8888/indexer/collections
