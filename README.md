@@ -1,8 +1,5 @@
 # How to Hue Dashboards
-This repository will walk through a tutorial on how to access, and use Hue dashboards.
-
-#### Contact
-Sam Gedwillo (samgedwillo@gmail.com)
+This repository will walk through a tutorial on how to access and utilize Hue dashboards.
 
 ### Prereqs
 1. Cloudera Quickstart
@@ -18,7 +15,8 @@ https://www.kaggle.com/census/total-construction-spending-data-collection
   https://community.cloudera.com/t5/Hadoop-101-Training-Quickstart/How-to-setup-Cloudera-Quickstart-Virtual-Machine/ta-p/35056
 
 ### 2. Extract the file from the zipped folder and move it to HDFS.
-- Use the command: `sudo -u hdfs hadoop fs -put {file location} {hdfs location}`
+- Use the command: `hadoop fs -put fileLocation /user/hive/warehouse/`
+  Alternatively, if you placed your file elsewhere `sudo -u hdfs hadoop fs -put {file location} {hdfs location}`
 - If you have permission issues with the file use the command: `chmod +rwd {file}`
 
 ### 3. Move the dataset into Hue.
@@ -55,3 +53,6 @@ https://www.kaggle.com/census/total-construction-spending-data-collection
 https://www.kaggle.com/census/total-construction-spending-data-collection
 https://www.tutorialspoint.com/apache_solr/apache_solr_indexing_data.htm
 https://www.youtube.com/watch?v=Gi1iOZmNzqE
+
+#### Contact
+Sam Gedwillo (samgedwillo@gmail.com)
